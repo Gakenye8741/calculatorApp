@@ -1,4 +1,4 @@
-// calculator.js
+
 const display = document.getElementById('display');
 const buttons = document.querySelector('.buttons');
 let currentInput = '';
@@ -7,7 +7,7 @@ buttons.addEventListener('click', (event) => {
     const target = event.target;
 
     if (!target.matches('button')) {
-        return; // Ignore clicks on non-button elements within the buttons container
+        return; 
     }
 
     const action = target.dataset.action;
@@ -31,7 +31,7 @@ buttons.addEventListener('click', (event) => {
             calculate();
             break;
         default:
-            // Do nothing for other clicks (like the empty button)
+            
             break;
     }
 });
